@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #00B4DB, #0083B0);
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.weather-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.weather-input input {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.weather-input button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.weather-input button:hover {
+  background: #1d4ed8;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.location {
+  margin-bottom: 1.5rem;
+}
+
+.location h2 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.location p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.weather-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-item .label {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-item .value {
+  color: #1a1a1a;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.forecast {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  backdrop-filter: blur(10px);
+}
+
+.forecast-card h3 {
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.forecast-card .temp {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.forecast-card .condition {
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.forecast-details {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.forecast-details p {
+  margin-bottom: 0.3rem;
+}
+
+@media (max-width: 768px) {
+  .weather-info {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .forecast {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+
+  .search-box {
+      flex-direction: column;
+  }
+
+  .search-box button {
+      width: 100%;
+  }
+
+  .weather-card {
+      padding: 1.5rem;
+  }
+
+  h1 {
+      font-size: 2rem;
+  }
+}
