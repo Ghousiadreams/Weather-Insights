@@ -27,7 +27,7 @@ Styling: CSS (Responsive Design)
 
 Clone the repository:
 
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Ghousiadreams/Weather-Insights
 
 Navigate to the project directory:
 
@@ -39,7 +39,7 @@ npm install
 
 Create a .env file in the root directory and add your API key:
 
-REACT_APP_WEATHER_API_KEY=your_api_key_here
+REACT_APP_WEATHER_API_KEY= "cd698fe7cf3dc6a6dab9b154c8b89321"
 
 Start the application:
 
